@@ -3,6 +3,7 @@ services:
   db:
     image: mysql:8.0.39
     container_name: draw_db
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_PASSWORD: root
