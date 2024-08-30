@@ -12,3 +12,7 @@ services:
       - "3306:3306"
     volumes:
       - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
+      - draw_db_volumes:/var/lib/mysql
+volumes:
+  draw_db_volumes:
+    name: draw_data
