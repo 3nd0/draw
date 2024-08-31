@@ -13,6 +13,18 @@ services:
     volumes:
       - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
       - draw_db_volumes:/var/lib/mysql
+  web:
+    image: python:3.12.5
+    container_name: draw_web
+    restart: always
+    build:
+      context: ./web
+    tty: true
+    volumes:
+      - ../src/web:/root/src
+    ports:
+      - "8080:8080"
+
 volumes:
   draw_db_volumes:
     name: draw_data
