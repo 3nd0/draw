@@ -16,10 +16,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="flex flex-row h-screen">
-          <div className='fixed top-0 left-0'>
+          <div className="fixed top-0 left-0">
             <SideBar />
           </div>
-          <div className='fixed top-0 left-64 w-screen h-screen pb-40'>{children}</div>
+          <div className="fixed top-0 left-64 w-screen h-screen pb-40">
+            {children}
+          </div>
         </div>
       </body>
     </html>
