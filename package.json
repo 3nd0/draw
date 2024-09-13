@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
-    "format": "npx prettier $PATH --write"
+    "format": "npx prettier --write"
   },
   "lint-staged": {
     "**/*": "npx prettier --write --ignore-unknown"
