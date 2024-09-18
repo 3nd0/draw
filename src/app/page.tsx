@@ -1,9 +1,7 @@
-import SideBar from "@/components/SideBar";
-
 export default function Home() {
   return (
-    <div>
-      <SideBar/>
+    <div className="flex justify-center">
+      <p className="text-2xl">こんにちは、◯◯さん</p>
     </div>
-  );
+  )
 }
